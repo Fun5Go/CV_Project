@@ -33,7 +33,7 @@ from torchvision.transforms.v2 import (
 from unet import UNet
 
 
-# Mapping class IDs to train IDs
+# Mapping class IDs to train IDs dsfdse
 id_to_trainid = {cls.id: cls.train_id for cls in Cityscapes.classes}
 def convert_to_train_id(label_img: torch.Tensor) -> torch.Tensor:
     return label_img.apply_(lambda x: id_to_trainid[x])
